@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#sidebar {
+    background-color: #f8f9fc;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 289px;
+    padding: 20px;
+}
+
+#sidebar #sidebar-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#sidebar #sidebar-cabecalho #dados-perfil {
+    display: flex;
+    align-items: center;
+}
+
+#sidebar #sidebar-cabecalho #dados-perfil img {
+    width: 30px;
+    min-height: 30px;
+    border: 1px solid #4a5462;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+#sidebar #sidebar-cabecalho #dados-perfil p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#sidebar #sidebar-cabecalho button {
+    border: none;
+    background-color: #f8f9fc;
+    padding: 3px;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#sidebar #sidebar-cabecalho button span {
+    font-size: 25px;
+    font-weight: 200;
+}
+
+#sidebar #sidebar-cabecalho button:hover {
+    background-color: #e6e6e6;
+}
