@@ -10,60 +10,63 @@
     <link rel="stylesheet" href="./css/to-do-lists.css">
 </head>
 <body>
-    <aside id="sidebar">
-        <div id="sidebar-cabecalho">
-            <div id="dados-perfil">
-                <img src="./img/lista_icones/usuario_test.png" alt="usuario test">
-                <p>Irani Junior</p>
+    
+    <div id="div-projeto">
+        <aside id="sidebar">
+            <div id="sidebar-cabecalho">
+                <div id="dados-perfil">
+                    <img src="./img/lista_icones/usuario_test.png" alt="usuario test">
+                    <p>Irani Junior</p>
+                </div>
+    
+                <button class="btn-sidebar">
+                    <span class="material-symbols-outlined">
+                        dock_to_right
+                    </span>
+                </button>
             </div>
-
-            <button class="btn-sidebar">
-                <span class="material-symbols-outlined">
-                    dock_to_right
-                </span>
-            </button>
-        </div>
-
-        <div id="sidebar-meus-projetos">
-            <div id="meus-projetos-cabecalho">
-                <p>Meus Projetos</p>
-
-                <div id="meus-projetos-icones">
-                    <button class="icones-meus-projetos">
-                        <span class="material-symbols-outlined">
-                            add
-                        </span>
-                    </button>
-
-                    <button class="icones-meus-projetos">
-                        <span class="material-symbols-outlined">
-                            expand_more
-                        </span>
-                    </button>
+    
+            <div id="sidebar-meus-projetos">
+                <div id="meus-projetos-cabecalho">
+                    <p>Meus Projetos</p>
+    
+                    <div id="meus-projetos-icones">
+                        <button class="icones-meus-projetos">
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                        </button>
+    
+                        <button class="icones-meus-projetos">
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+                        </button>
+                    </div>
+                </div>
+    
+                <div id="meus-projetos-corpo">
+                    
                 </div>
             </div>
-
-            <div id="meus-projetos-corpo">
-                
+        </aside>
+    
+        <main id="main-conteudo">
+            <div class="div-button-sidebar">
+                <button class="btn-sidebar">
+                    <span class="material-symbols-outlined">
+                        dock_to_right
+                    </span>
+                </button>
             </div>
-        </div>
-    </aside>
-
-    <main id="main-conteudo">
-        <div class="div-button-sidebar">
-            <button class="btn-sidebar">
-                <span class="material-symbols-outlined">
-                    dock_to_right
-                </span>
-            </button>
-        </div>
-
-        <div class="container-geral">
-            <div class="container">
-                <h1>To-Do List</h1>
+    
+            <div class="container-geral">
+                <div class="container">
+                    <h1 id="titulo-projeto">MEUS PROJETOS</h1>
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
     
     <script src="./js/to-do-list.js"></script>
 </body>

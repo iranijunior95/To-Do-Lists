@@ -179,20 +179,67 @@ body.toggle #main-conteudo .div-button-sidebar > button {
     width: 80%;
 }
 
-@media (width < 700px){
-    #sidebar {
-        margin-left: -289px;
-    }
-
-    #main-conteudo {
-        margin-left: 11px;
-    }
-
-    #main-conteudo .div-button-sidebar > button {
-        visibility: visible;
-        transition: 0.2s;
-    }
+.container > h1 {
+    text-align: center;
+    color: #424242;
+    border-bottom: 1px solid #e6e6e6;
 }
+
+#div-primeiro-acesso {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#div-primeiro-acesso > input {
+    margin-top: 30px;
+    height: 40px;
+    width: 300px;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: 1px solid #4a5462;
+    border-radius: 5px;
+}
+
+#div-primeiro-acesso > input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: 2px solid #415a7c;
+    border-radius: 5px;
+}
+
+#div-primeiro-acesso > button {
+    margin-top: 10px;
+    height: 40px;
+    width: 300px;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 5px;
+    background-color: #33609e;
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid #4a5462;
+    border-radius: 5px;
+}
+
+#div-primeiro-acesso > p {
+    margin-top: 10px;
+}
+
+.pNormal {
+    color: transparent;
+}
+
+.pErro {
+    color: rgb(201, 50, 50);
+}
+
+
 
 
 
