@@ -30,9 +30,13 @@ if(!localStorage.getItem('primeiroAcesso')) {
             document.querySelector('#div-primeiro-acesso').style.display = 'none';
             document.querySelector('#div-projeto').style.display = 'block';
 
+            document.querySelector('#p-nome-usuario').innerText = localStorage.getItem('primeiroAcesso');
+
         }
     });
 }
+
+document.querySelector('#p-nome-usuario').innerText = localStorage.getItem('primeiroAcesso');
 
 document.querySelectorAll('.btn-sidebar').forEach(btn => {
 
