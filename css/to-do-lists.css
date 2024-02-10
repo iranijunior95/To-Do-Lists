@@ -7,52 +7,110 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-#div-primeiro-acesso {
-    height: 100vh;
+body {
+    background-color: #9dab34d2;
+}
+
+#container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-to-do {
+    padding: 20px;
+    width: 50%;
+    background-color: #fffab3af;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+
+.titulo-to-do {
+    display: flex;
     justify-content: center;
+    border-bottom: 1px solid #fcfadce3;
+}
+
+.titulo-to-do > h1 {
+    font-size: 30px;
+    color: #2c2321f8;
+    margin-bottom: 20px;
+}
+
+.input-to-do {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.input-to-do > input {
+    width: 75%;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    color: #2c2321e0;
+}
+
+.input-to-do > input:focus {
+    border: 1px solid #63b397b4;
+}
+
+.input-to-do > button {
+    width: 25%;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ffffffe8;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    color: #2c2321e0;
+    cursor: pointer;
+}
+
+.input-to-do > button:hover {
+    background-color: #FFFFFF;
+}
+
+.input-to-do > button:active {
+    background-color: #a2e5d27c;
+    font-size: 13.8px;
+}
+
+.lista-tarefas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarefas {
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    border: 1px solid #FFFFFF;
+    background-color: #ffffff62;
+    border-radius: 5px;
     align-items: center;
 }
 
-#div-primeiro-acesso > input {
-    margin-top: 30px;
-    height: 40px;
-    width: 300px;
-    font-size: 20px;
-    padding: 5px;
-    text-align: center;
-    box-shadow: 0 0 0 0;
-    outline: 0;
-    border: 1px solid #4a5462;
-    border-radius: 5px;
+#p-icone {
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFFFFF;
 }
 
-#div-primeiro-acesso > input:focus {
-    box-shadow: 0 0 0 0;
-    outline: 0;
-    border: 2px solid #415a7c;
-    border-radius: 5px;
+#p-nome-tarefa {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c2321e0;
 }
-
-#div-primeiro-acesso > button {
-    margin-top: 10px;
-    height: 40px;
-    width: 300px;
-    font-weight: bolder;
-    font-size: 20px;
-    padding: 5px;
-    background-color: #33609e;
-    color: #ffffff;
-    cursor: pointer;
-    border: 1px solid #4a5462;
-    border-radius: 5px;
-}
-
-#div-primeiro-acesso > p {
-    margin-top: 10px;
-}
-
 
 
 
