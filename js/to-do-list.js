@@ -86,7 +86,8 @@ function editarTarefa(index) {
 }
 
 function deletarTarefa(index) {
-    console.log(index);
+    arrayListaDeTarefas.pop(index);
+    renderizarListaDeTarefas();
 }
 
 renderizarListaDeTarefas();
