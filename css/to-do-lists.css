@@ -149,7 +149,7 @@ body {
 }
 
 .modal-edite {
-    
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -179,6 +179,68 @@ body {
     100% {
         transform: scale(1);
     }
+}
+
+.titulo-to-do-modal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #9dab34d2;
+}
+
+.titulo-to-do-modal > h1{
+    font-size: 30px;
+    color: #2c2321f8;
+    margin-bottom: 10px;
+}
+
+.input-to-do-modal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input-to-do-modal > input {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: 1px solid #9dab34d2;
+    border-radius: 5px;
+    color: #2c2321e0;
+}
+
+.footer-to-do-modal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.footer-to-do-modal > button {
+    width: 25%;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    border: 1px solid #9dab34d2;
+    padding: 10px;
+    border-radius: 5px;
+    color: #2c2321e0;
+    cursor: pointer;
+}
+
+#btn-cancelar-tarefa-modal:hover {
+    background-color: #db4545b6;
+}
+
+#btn-add-tarefa-modal:hover {
+    background-color: #58ca3bb7;
 }
 
 

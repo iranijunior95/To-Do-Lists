@@ -4,7 +4,36 @@ const divListaDeTarefas = document.querySelectorAll('.lista-tarefas')[0];
 
 const arrayListaDeTarefas = [];
 
+const btnCancelarModal = document.querySelector('#btn-cancelar-tarefa-modal');
+
 btnAdicionarTarefa.addEventListener('click', () => adicionarTarefa());
+btnCancelarModal.addEventListener('click', () => cancelarModal());
+
+document.querySelector('#btn-add-tarefa-modal').addEventListener('click', () => {
+    const inputEdite = document.querySelector('#input-add-modal');
+    const inputHidden = document.querySelector('#input-hidden-modal');
+
+    if(inputEdite.value === '') {
+        return;
+    }
+
+    arrayListaDeTarefas[inputHidden.value] = inputEdite.value;
+    renderizarListaDeTarefas();
+    cancelarModal();
+});
+
+function abrirModal() {
+    const modal = document.querySelectorAll('.modal-edite')[0];
+    const estilo = modal.style.display;
+
+    modal.style.display = estilo === 'block' ? 'none' : 'block';
+}
+
+function cancelarModal() {
+    document.querySelector('#input-add-modal').value = '';
+    document.querySelector('#input-hidden-modal').value = '';
+    abrirModal();
+}
 
 function adicionarTarefa() {
     
@@ -51,8 +80,9 @@ function renderizarListaDeTarefas() {
 }
 
 function editarTarefa(index) {
-    
-    document.querySelector('#p-nome-tarefa').innerHTML = `test`;
+    document.querySelector('#input-add-modal').value = arrayListaDeTarefas[index];
+    document.querySelector('#input-hidden-modal').value = index;
+    abrirModal();
 }
 
 function deletarTarefa(index) {
