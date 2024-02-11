@@ -20,19 +20,21 @@
 
             <div class="input-to-do">
                 <input type="text" id="input-add" name="input-add" placeholder="Adicionar tarefas...">
-                <button type="button">ADICIONAR</button>
+                <button type="button" id="btn-add-tarefa">ADICIONAR</button>
             </div>
 
             <div class="lista-tarefas">
-                <div class="tarefas">
-                    <p id="p-icone">°</p>
-                    <p id="p-nome-tarefa">Nenhuma tarefa cadastrada</p>
-                </div>
+                <div class="tarefas-vazias">
+                    <p id="p-nome-tarefa-vazia">Nenhuma tarefa cadastrada</p>
+                </div>    
             </div>
-
         </div>
     </div>
-    
+
+    <div class="modal-edite">
+        <div class="container-modal"></div>
+    </div>
+
     <script src="./js/to-do-list.js"></script>
 </body>
 </html>
